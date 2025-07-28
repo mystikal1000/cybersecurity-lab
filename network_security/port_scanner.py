@@ -9,5 +9,5 @@ def scan_ports(host, start=1, end=1024):
             if result == 0:
                 print(f"Port {port} is open")
 
-# Example:
-# scan_ports("127.0.0.1")
+if __name__ == "__main__":
+    scan_ports("127.0.0.1", 20, 1024)
